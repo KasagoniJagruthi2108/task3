@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Financial Tracker</h1>
+    <button id="addIncomeButton">Add Income</button>
+    <button id="addExpenditureButton">Add Expenditure</button>
+    <button id="totalAmountButton">Total Amount</button>
+
+    <h2>Income Table</h2>
+    <div>
+        <label for="incomeStartDate">Start Date:</label>
+        <input type="date" id="incomeStartDate">
+        <label for="incomeEndDate">End Date:</label>
+        <input type="date" id="incomeEndDate">
+        <label for="incomeMinAmount">Min Amount:</label>
+        <input type="number" id="incomeMinAmount">
+        <label for="incomeMaxAmount">Max Amount:</label>
+        <input type="number" id="incomeMaxAmount">
+        <button id="filterIncomeButton">Filter Income</button>
+        <button id="clearIncomeFilterButton">Clear Income Filter</button>
+    </div>
+    <table id="incomeTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Short Description</th>
+                <th>Income</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Income entries will be added here -->
+        </tbody>
+    </table>
+
+    <h2>Expenditure Table</h2>
+    <div>
+        <label for="expenditureStartDate">Start Date:</label>
+        <input type="date" id="expenditureStartDate">
+        <label for="expenditureEndDate">End Date:</label>
+        <input type="date" id="expenditureEndDate">
+        <label for="expenditureMinAmount">Min Amount:</label>
+        <input type="number" id="expenditureMinAmount">
+        <label for="expenditureMaxAmount">Max Amount:</label>
+        <input type="number" id="expenditureMaxAmount">
+        <button id="filterExpenditureButton">Filter Expenditure</button>
+        <button id="clearExpenditureFilterButton">Clear Expenditure Filter</button>
+    </div>
+    <table id="expenditureTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Short Description</th>
+                <th>Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Expenditure entries will be added here -->
+        </tbody>
+    </table>
+
+    <div id="totalAmountDisplay"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
